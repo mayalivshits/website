@@ -24,9 +24,13 @@ var igvwebConfig = {
 
     igvConfig:
         {
-            genome: "hg19",
+            genome: {
+                id: "patients",
+                name: "Patients",
+                fastaURL: "patients.fasta",
+                indexURL: "patients.fasta.fai"
+            },
             locus: "all",
-            genomeList: "resources/genomes.json",
             queryParametersSupported: true,
             showChromosomeWidget: true,
             showSVGButton: false,
